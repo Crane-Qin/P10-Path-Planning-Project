@@ -137,11 +137,11 @@ still be compilable with cmake and make./
 
 ## My implementation
 
-First, I detected the car in the neibhbourhood, to indentify its lane id and speed. 
+First, I detected the car in the neighborhood, to identify its lane id and speed. 
 
 Second, I defined a `behaviour()` function. If there was a car in the front and blocked the main car, we tried to change lanes. If the main car was not in the middle lane, it would try to get back.
 
-Third, I used the previous waypoints to ensure continuaty. And I created 3 points in the front to apply the spline. Then I caluculted the distance 30 m ahead and interpolated points to control the accelation and jerk.
+Third, I used the previous waypoints to ensure continuity. And I created 3 points in the front to apply the spline. Then I calculated the distance 30 m ahead and interpolated points to control the acceleration and jerk.
 
 Here is the [link](https://youtu.be/aYjE33uJALo) for my final implementation. The car could change lane lines safely with the given rules:
 
